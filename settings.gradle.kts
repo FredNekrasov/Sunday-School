@@ -21,3 +21,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "Sun School"
 include(":app")
+
+include(":core:data")
+include(":core:presentation")
+
+include(":features:auth")
