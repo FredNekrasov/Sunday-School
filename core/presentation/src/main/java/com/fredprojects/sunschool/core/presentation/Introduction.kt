@@ -1,4 +1,4 @@
-package com.fredprojects.core.presentation
+package com.fredprojects.sunschool.core.presentation
 
 /**
  * В данном модуле будут находится:

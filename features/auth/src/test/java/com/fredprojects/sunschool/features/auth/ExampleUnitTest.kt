@@ -1,4 +1,4 @@
-package com.fredprojects.features.auth
+package com.fredprojects.sunschool.features.auth
 
 import org.junit.Test
 

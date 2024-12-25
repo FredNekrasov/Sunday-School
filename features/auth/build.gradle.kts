@@ -1,10 +1,11 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.ksp)
 }
 
 android {
-    namespace = "com.fredprojects.features.auth"
+    namespace = "com.fredprojects.sunschool.features.auth"
     compileSdk = 35
 
     defaultConfig {
@@ -31,6 +32,9 @@ android {
 
 dependencies {
     implementation(libs.koin.core)
+    implementation(libs.bundles.retrofit)
+    implementation(libs.bundles.room)
+    ksp(libs.androidx.room.compiler)
     implementation(libs.bundles.presentation)
     testImplementation(libs.junit)
 }
