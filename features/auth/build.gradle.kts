@@ -31,6 +31,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":core:presentation"))// подключаем модуль core:presentation
+
     implementation(libs.koin.core)
     implementation(libs.bundles.retrofit)
     implementation(libs.bundles.room)
