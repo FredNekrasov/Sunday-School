@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.fredprojects.core.presentation"
+    namespace = "com.fredprojects.sunschool.core.presentation"
     compileSdk = 35
 
     defaultConfig {

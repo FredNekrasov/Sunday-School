@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.fredprojects.features.auth"
+    namespace = "com.fredprojects.sunschool.features.auth"
     compileSdk = 35
 
     defaultConfig {
