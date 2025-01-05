@@ -1,12 +1,12 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.ksp)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
-    namespace = "com.fredprojects.sunschool.features.auth"
-    compileSdk = 35
+    namespace = "com.fredprojects.core.data"
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 26
@@ -31,12 +31,6 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:presentation"))// подключаем модуль core:presentation
-
     implementation(libs.koin.core)
-    implementation(libs.bundles.retrofit)
-    implementation(libs.bundles.room)
-    ksp(libs.androidx.room.compiler)
-    implementation(libs.bundles.presentation)
-    testImplementation(libs.junit)
+    implementation(libs.bundles.network)
 }

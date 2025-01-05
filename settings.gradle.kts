@@ -23,5 +23,6 @@ rootProject.name = "Sun School"
 include(":app")
 
 include(":core:presentation")
+include(":core:data")
 
 include(":features:auth")
